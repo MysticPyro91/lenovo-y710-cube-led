@@ -35,10 +35,12 @@ Y720, Y740, Legion 5/7 and others); those use different controllers, see for exa
 
 ## Install
 
-Arch Linux / AUR:
+Arch Linux (the AUR package is not up yet; build the package from this repo):
 
 ```
-yay -S lenovo-y710-cube-led
+git clone https://github.com/MysticPyro91/lenovo-y710-cube-led
+cd lenovo-y710-cube-led/aur
+makepkg -si
 ```
 
 From source (needs `gcc` and `make`):

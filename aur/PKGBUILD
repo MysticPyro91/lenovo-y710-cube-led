@@ -1,0 +1,24 @@
+# Maintainer: MysticPyro91 <https://github.com/MysticPyro91>
+pkgname=lenovo-y710-cube-led
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Control the Y logo and bottom light strips of a Lenovo IdeaCentre Y710 Cube (Nerve Center LEDs on Linux)"
+arch=('x86_64')
+url="https://github.com/MysticPyro91/lenovo-y710-cube-led"
+license=('MIT')
+depends=('glibc')
+makedepends=('gcc' 'make')
+source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+  cd "$pkgname-$pkgver"
+  make
+}
+
+package() {
+  cd "$pkgname-$pkgver"
+  make DESTDIR="$pkgdir" PREFIX=/usr install
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 README.md PROTOCOL.md -t "$pkgdir/usr/share/doc/$pkgname/"
+}

@@ -1,0 +1,14 @@
+pkgbase = lenovo-y710-cube-led
+	pkgdesc = Control the Y logo and bottom light strips of a Lenovo IdeaCentre Y710 Cube (Nerve Center LEDs on Linux)
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/MysticPyro91/lenovo-y710-cube-led
+	arch = x86_64
+	license = MIT
+	makedepends = gcc
+	makedepends = make
+	depends = glibc
+	source = lenovo-y710-cube-led-1.0.0.tar.gz::https://github.com/MysticPyro91/lenovo-y710-cube-led/archive/refs/tags/v1.0.0.tar.gz
+	sha256sums = 76db9177ca20d092ec8393a33694ffe10c6a18c208d42acff9a3de964c7bc012
+
+pkgname = lenovo-y710-cube-led

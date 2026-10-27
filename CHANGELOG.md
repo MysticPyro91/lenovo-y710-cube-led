@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-27 — Bug ledger
+
+- Add [the bug ledger](docs/bug-ledger.md) and an `AGENTS.md` rule to read and maintain it.
+
 ## 1.0.0 — 2026-10-07
 
 - First release: `y710-led get` and `y710-led set LOGO BOTTOM` with

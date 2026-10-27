@@ -1,5 +1,8 @@
 # Overview
 
+The [bug ledger](bug-ledger.md) records reported bugs with causes, fixes and
+status. Read it before bug hunting and keep it current.
+
 `y710-led` sets the two case lights of a Lenovo IdeaCentre Y710 Cube (the Y logo
 and the bottom light strips) from Linux, replacing Lenovo Nerve Center.
 
